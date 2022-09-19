@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Breakdance School | Join Our Crew</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div id="content">
+      <header>
+        <div class="logo-box">
+          <img
+            class="logo"
+            src="https://cdn.glitch.com/97b5be17-b881-4112-8e09-e1a9da4bb187%2Fthumbnails%2Fbboy_icon_logo.png?1613884367143"
+            alt="Logo image"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dance-styles.html">Dance Styles</a></li>
+            <li><a href="join-us.html">Join Our Crew</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="moves-banner-box">
+          <img
+            src="https://cdn.glitch.com/97b5be17-b881-4112-8e09-e1a9da4bb187%2Fthumbnails%2Fbboy-banner-3.jpg?1615493173303"
+            alt="Banner image"
+            width="100%"
+
+          />
+          
+        </div>
+        <!--Dance Moves header-->
+        <div class="moves-grid">
+        <h2 class="moves-header">
+          Dance Moves
+        </h2>
+        <div id="feedback"></div>
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" value="" />
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <input
+            type="email"
+            id="mail"
+            name="user_email"
+            value=""
+          />
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li class="button">
+          <button type="submit">Send your message</button>
+        </li>
+      </ul>
+    </form>
+    <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your request. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+
+        <!--paragraph1-->
+        
+         <!-- <h2 id="paragraph" class="moves-headline-1">
+            Windmill
+          </h2> -->
+          <p class="moves-paragraph-1">
+            The Windmill is a popular breakdancing move. You roll your torso continuously in a circular path on the floor, across the upper chest/shoulders/back, while twirling your legs in a V-shape through the air.
+          </p>
+          
+          <img
+            class="moves-windmill-img"
+            src="https://cdn.glitch.com/97b5be17-b881-4112-8e09-e1a9da4bb187%2Fthumbnails%2Fbreakdance5.jpg?1614456559452"
+            alt="windmill"
+          />
+          
+
+          <!--paragraph2-->
+
+          <!-- <h2 class="moves-headline-2">
+            Flare
+          </h2> -->
+          <p class="moves-paragraph-2">
+            Flare is a power move that is derived from gymnastics.You alternate balancing the torso between either arm while swinging your legs beneath in continuous circles. It is a fundamental b-boying/bgirl power move.
+          </p>
+          
+          <img
+            class="moves-flare-img"
+            src="https://cdn.glitch.com/97b5be17-b881-4112-8e09-e1a9da4bb187%2Fthumbnails%2Fflare.jpg?1615491733473"
+            alt="flare"
+          />
+          
+          <!--paragraph3-->
+          
+          <!--  <h2 class="moves-headline-3">
+              Baby Freeze
+            </h2> -->
+            <p class="moves-paragraph-3">
+              Baby freeze is a beginner-friendly move that helps build your foundation for freezes. It's a move where you hold your body low to the ground while balancing yourself on your hands and head with your feet in the air.
+            </p>
+            <img
+            class="moves-babyfreeze-img"
+            src="https://cdn.glitch.com/97b5be17-b881-4112-8e09-e1a9da4bb187%2Fthumbnails%2Fbreakdance6.jpg?1614456549914"
+            alt="flare"
+          />
+          
+        </div>
+        <!--home-grid-->
+      </main>
+      <footer>
+        <p class="copyright">
+          &copy; 2021 Breakdance University - Shawn Yang - Sec 10 | <a href="https://yang-money-project.glitch.me/site-plan.html">Site-Plan
+        </a> | <a href="join-us.html">Join Us</a>
+        </p>
+        <div class="social">
+          <p>
+            <a href="https://www.facebook.com">
+              <img
+                src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png"
+                alt="Facebook icon"
+              />
+            </a>
+            <a href="https://www.instagram.com">
+              <img
+                src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
+                alt="Instagram icon"
+              />
+            </a>
+            <a href="https://www.twitter.com">
+              <img
+                src="https://byui-cit.github.io/wdd130/images/icons/color/twitter.png"
+                alt="Twitter icon"
+              />
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+</html>
